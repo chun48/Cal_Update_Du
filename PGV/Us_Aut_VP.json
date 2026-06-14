@@ -2,51 +2,53 @@
   "schema": "di2n.auth.signed-policy.v1",
   "algorithm": "ECDSA-P256-SHA256",
   "keyId": "di2n-20260613",
-  "signedAt": "2026-06-14T06:36:46.798Z",
+  "signedAt": "2026-06-14T16:01:19.712Z",
   "payload": {
-    "version": 1781419006,
+    "version": 1781452879,
     "appId": "di2n-graph-viewer",
-    "updatedAt": "2026-06-14T06:36:46Z",
+    "updatedAt": "2026-06-14T16:01:19Z",
     "expiresAt": "2026-12-31T23:59:59Z",
     "requireLogin": true,
     "requireKnownUser": true,
     "requireSignedPolicy": true,
     "passwordAlgorithm": "PBKDF2-SHA256",
     "passwordIterations": 210000,
+    "loginHashAlgorithm": "PBKDF2-SHA256",
+    "loginHashIterations": 120000,
     "users": [
       {
-        "id": "dmf",
-        "active": true,
+        "loginSaltBase64": "qSo5TRjTKXWYxYfUX2Bp2Q==",
+        "loginHashBase64": "0AIzevLyLYyNEKXHj/ZUTrSujIxsCmVKo5nFpYnRSFg=",
         "passwordAlgorithm": "PBKDF2-SHA256",
         "passwordIterations": 210000,
-        "passwordSaltBase64": "r3Qol55hioFrXD2YuxpFrg==",
-        "passwordHashBase64": "6R7TIWscB+Ml+2sVUejbaWJsup1VZ6uBI/hvh+rzTMA="
+        "passwordSaltBase64": "NyKe1L4w01Vo+dazZXVovw==",
+        "passwordHashBase64": "KKY0JdjjDr5BYZSnCVLsld3dbskrKzWXq+y7v2xiQiw="
       },
       {
-        "id": "jgg",
-        "active": true,
+        "loginSaltBase64": "+HalnvIsQ7bf3YwOlIoCXg==",
+        "loginHashBase64": "F0JysDb9FNabDlYI5neES8ZE5iQTSmbkafX3QzteMC0=",
         "passwordAlgorithm": "PBKDF2-SHA256",
         "passwordIterations": 210000,
-        "passwordSaltBase64": "RxrKTZSwAEEFdeVqLkr4XQ==",
-        "passwordHashBase64": "yBqXdUztZkRn+b9au5yvgTCwpyGnaqOFeN2enfT7TAM="
+        "passwordSaltBase64": "3UIlO+2hNsr5zN6e3ri9NA==",
+        "passwordHashBase64": "P8ABN0B3Ij/gV2UH5L7BCydZIONoZlzhdp7et4RD66Y="
       },
       {
-        "id": "acn",
-        "active": true,
+        "loginSaltBase64": "BvawSMxf0pN85DNmDbvSLg==",
+        "loginHashBase64": "o6x6FMJ6j4b8ZtaGrwQm0PcGNaXpaJl+BvFlPgBZIug=",
         "passwordAlgorithm": "PBKDF2-SHA256",
         "passwordIterations": 210000,
-        "passwordSaltBase64": "dE/JNr76cqcei6w+APy0WQ==",
-        "passwordHashBase64": "N3WmYeikZdv69px4Pe4ILxCkiwEoFBf8EUPtLayKoiY="
+        "passwordSaltBase64": "a6bT3TWRDkitdpXYYBcx6A==",
+        "passwordHashBase64": "/aMYpPzJymjn3+BtZ3xMKSTbjlwfajfMzvvTAnUwrCA="
       },
       {
-        "id": "jfb",
-        "active": true,
+        "loginSaltBase64": "l0PrhZaeK2YMtRoDD9rGZQ==",
+        "loginHashBase64": "RYjaiL/HfM6FDzmwPdWL4FLN5wE/iIMQvPH/79lXHX0=",
         "passwordAlgorithm": "PBKDF2-SHA256",
         "passwordIterations": 210000,
-        "passwordSaltBase64": "BBW7TMuMX33gu5N8r0/z2A==",
-        "passwordHashBase64": "YBMpfCYBb86BUZN0bwfMs16GQOrB4iIOYO1gmpi48p8="
+        "passwordSaltBase64": "2CMQZ/rrbaSZXh2sxuvNjA==",
+        "passwordHashBase64": "ScydnzXcC1GviIrjyPvzoTds5BAlCi0ovN1IMj6psSI="
       }
     ]
   },
-  "signatureBase64": "ugDru/NW1RmbeMUT/KR6His6SBxChkDsbT9v2tkigHs7xoXmSM9+zzb1UnZ3JrcIly8WAmNM1zCz0odr5Hcsaw=="
+  "signatureBase64": "9fklgoeQ8Om6f69qBUzaerd3VgROvfKhKx3kZNEzhOYuN2rZhYqK482yJ5sCF0WpQQhraQBm9yai0QTItD9qjw=="
 }
