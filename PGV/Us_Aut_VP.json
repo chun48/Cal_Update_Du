@@ -1,0 +1,52 @@
+{
+  "schema": "di2n.auth.signed-policy.v1",
+  "algorithm": "ECDSA-P256-SHA256",
+  "keyId": "di2n-20260613",
+  "signedAt": "2026-06-14T06:36:46.798Z",
+  "payload": {
+    "version": 1781419006,
+    "appId": "di2n-graph-viewer",
+    "updatedAt": "2026-06-14T06:36:46Z",
+    "expiresAt": "2026-12-31T23:59:59Z",
+    "requireLogin": true,
+    "requireKnownUser": true,
+    "requireSignedPolicy": true,
+    "passwordAlgorithm": "PBKDF2-SHA256",
+    "passwordIterations": 210000,
+    "users": [
+      {
+        "id": "dmf",
+        "active": true,
+        "passwordAlgorithm": "PBKDF2-SHA256",
+        "passwordIterations": 210000,
+        "passwordSaltBase64": "r3Qol55hioFrXD2YuxpFrg==",
+        "passwordHashBase64": "6R7TIWscB+Ml+2sVUejbaWJsup1VZ6uBI/hvh+rzTMA="
+      },
+      {
+        "id": "jgg",
+        "active": true,
+        "passwordAlgorithm": "PBKDF2-SHA256",
+        "passwordIterations": 210000,
+        "passwordSaltBase64": "RxrKTZSwAEEFdeVqLkr4XQ==",
+        "passwordHashBase64": "yBqXdUztZkRn+b9au5yvgTCwpyGnaqOFeN2enfT7TAM="
+      },
+      {
+        "id": "acn",
+        "active": true,
+        "passwordAlgorithm": "PBKDF2-SHA256",
+        "passwordIterations": 210000,
+        "passwordSaltBase64": "dE/JNr76cqcei6w+APy0WQ==",
+        "passwordHashBase64": "N3WmYeikZdv69px4Pe4ILxCkiwEoFBf8EUPtLayKoiY="
+      },
+      {
+        "id": "jfb",
+        "active": true,
+        "passwordAlgorithm": "PBKDF2-SHA256",
+        "passwordIterations": 210000,
+        "passwordSaltBase64": "BBW7TMuMX33gu5N8r0/z2A==",
+        "passwordHashBase64": "YBMpfCYBb86BUZN0bwfMs16GQOrB4iIOYO1gmpi48p8="
+      }
+    ]
+  },
+  "signatureBase64": "ugDru/NW1RmbeMUT/KR6His6SBxChkDsbT9v2tkigHs7xoXmSM9+zzb1UnZ3JrcIly8WAmNM1zCz0odr5Hcsaw=="
+}

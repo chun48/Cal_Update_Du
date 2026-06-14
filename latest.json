@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "latest": "Ca_Du_06_26.json",
+  "updateVersion": "06/26",
+  "dataVersion": "Version 06/26",
+  "generatedAt": "2026-06-07T21:14:45+00:00",
+  "recordCount": 85,
+  "authUserCount": 2,
+  "usersHash": "fde8c3fc21cafa7778a30b4fdc84690e6a7d3374e415fa69248fb7b848f6f50c",
+  "sha256": "713cde1ed028b61e914ed8937c596aa3af19e87dd6b47fd56a141eb4801a52c5",
+  "payloadSha256": "36fdba79f9cc6507d555862c77d2a8e878c3308fd57cc0d2a56ae3748a65f682",
+  "encrypted": true,
+  "encryption": "CalDu-HMAC-Stream-v1"
+}
