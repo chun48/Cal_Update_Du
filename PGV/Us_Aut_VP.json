@@ -2,11 +2,11 @@
   "schema": "di2n.auth.signed-policy.v1",
   "algorithm": "ECDSA-P256-SHA256",
   "keyId": "di2n-20260613",
-  "signedAt": "2026-06-14T16:01:19.712Z",
+  "signedAt": "2026-06-14T16:13:05.841Z",
   "payload": {
-    "version": 1781452879,
+    "version": 1781453585,
     "appId": "di2n-graph-viewer",
-    "updatedAt": "2026-06-14T16:01:19Z",
+    "updatedAt": "2026-06-14T16:13:05Z",
     "expiresAt": "2026-12-31T23:59:59Z",
     "requireLogin": true,
     "requireKnownUser": true,
@@ -50,5 +50,5 @@
       }
     ]
   },
-  "signatureBase64": "9fklgoeQ8Om6f69qBUzaerd3VgROvfKhKx3kZNEzhOYuN2rZhYqK482yJ5sCF0WpQQhraQBm9yai0QTItD9qjw=="
+  "signatureBase64": "K2fUSMJQvRR8kj0ILdNFoX3xnuEQYQCIlV+Qh8KsWzTc8f99mZACzwoxkzK/cKLa2LZa91ddxHc1YInwi48cSA=="
 }
