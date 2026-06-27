@@ -1,11 +1,11 @@
 {
   "allowUnknown": true,
-  "allowedInstallIds": [],
-  "blockedInstallIds": [
+  "allowedInstallIds": [
     "cid-omen-e06d61c6-4473-4fc9-88bf-6146a1ee046d"
   ],
+  "blockedInstallIds": [],
   "enabled": true,
   "message": "Este equipo no esta autorizado.",
   "schema": "comp8.allo.v1",
-  "updatedAt": "2026-06-27T14:45:04Z"
+  "updatedAt": "2026-06-27T14:53:02Z"
 }
