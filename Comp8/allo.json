@@ -2,6 +2,7 @@
   "schema": "comp8.allo.v1",
   "updatedAt": "2026-06-27T00:00:00Z",
   "enabled": true,
+  "allowUnknown": true,
   "allowedInstallIds": [
     "cid-3d26bf76-80c2-42dc-9314-f348572458ae"
   ],
