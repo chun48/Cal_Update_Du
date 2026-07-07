@@ -1,11 +1,12 @@
 {
   "allowUnknown": true,
   "allowedInstallIds": [
-    "cid-omen-e06d61c6-4473-4fc9-88bf-6146a1ee046d"
+    "cid-omen-e06d61c6-4473-4fc9-88bf-6146a1ee046d",
+    "cid-jlmq-8f075999-0abb-4ae5-80dd-5ed6f747145e"
   ],
   "blockedInstallIds": [],
   "enabled": true,
   "message": "Este equipo no esta autorizado.",
   "schema": "comp8.allo.v1",
-  "updatedAt": "2026-06-27T14:53:02Z"
+  "updatedAt": "2026-07-07T17:32:05Z"
 }
