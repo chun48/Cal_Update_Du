@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Cache-Control" content="no-store">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <title>Autorizaci&oacute;n de Spotify</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: #101416;
+      color: #f5f7f4;
+    }
+    main {
+      width: min(520px, calc(100% - 40px));
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 26px;
+      letter-spacing: 0;
+    }
+    p {
+      color: #b9c3c6;
+      line-height: 1.5;
+    }
+    a {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 18px;
+      border-radius: 7px;
+      background: #1ed760;
+      color: #07170d;
+      text-decoration: none;
+      font-weight: 800;
+    }
+    .error {
+      color: #ff9b9b;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Volviendo al CYD</h1>
+    <p id="status">Completando la autorizaci&oacute;n de Spotify...</p>
+    <a id="continue" href="#" hidden>Continuar al CYD</a>
+  </main>
+  <script>
+    (() => {
+      const status = document.getElementById("status");
+      const continueLink = document.getElementById("continue");
+      const parameters = new URLSearchParams(window.location.search);
+      const state = parameters.get("state") || "";
+      const separator = state.indexOf("|");
+      const returnHost = separator >= 0 ? state.slice(separator + 1) : "";
+
+      // El codigo es de un solo uso. Se retira de la URL antes de volver al CYD.
+      window.history.replaceState({}, document.title, window.location.pathname);
+
+      function isAllowedLocalHost(value) {
+        const host = value.toLowerCase().replace(/:\d+$/, "");
+        if (host === "cyd-alexa.local") return true;
+
+        const parts = host.split(".");
+        if (parts.length !== 4) return false;
+        const octets = parts.map((part) => Number(part));
+        if (octets.some((part) => !Number.isInteger(part) || part < 0 || part > 255)) return false;
+
+        return octets[0] === 10 ||
+          (octets[0] === 172 && octets[1] >= 16 && octets[1] <= 31) ||
+          (octets[0] === 192 && octets[1] === 168);
+      }
+
+      if (!state || !isAllowedLocalHost(returnHost)) {
+        status.textContent = "No se ha podido identificar el CYD de forma segura.";
+        status.className = "error";
+        return;
+      }
+
+      const localParameters = new URLSearchParams({state});
+      for (const name of ["code", "error", "error_description"]) {
+        const value = parameters.get(name);
+        if (value) localParameters.set(name, value);
+      }
+
+      const target = `http://${returnHost}/spotify/callback?${localParameters.toString()}`;
+      continueLink.href = target;
+      continueLink.hidden = false;
+      window.setTimeout(() => window.location.replace(target), 500);
+    })();
+  </script>
+</body>
+</html>
